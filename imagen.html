@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 10px auto auto auto 10px;
+                grid-template-rows: auto;
+                grid-row-gap: 10px;
+                grid-template-areas: 
+                    ". . . menu1 ."
+                    ". . . menu2 ."
+                    ". . . . ."
+                    ". . . . ."
+                    ". . . . ."
+                    ". . form . .";
+            }
+            .item1{
+                text-align: right;
+                grid-area: menu1;
+            }
+            .item2{
+                text-align: right;
+                grid-area: menu2;
+            }
+            .item3{
+                text-align: center;
+                grid-area: form;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a class="item1" href="index.html">All</a>
+            <a class="item2" href="advanced_search.html">Advanced Search</a>
+        
+            <form class="item3" action="https://www.google.com/search?tbm=isch">
+                <input  style="border-radius: 20px" type="text" name="q">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
+    </body>
+</html>
