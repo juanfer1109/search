@@ -2,23 +2,28 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link href="style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div style="justify-content: right;" class="btn-group dropstart">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-            </a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="imagen.html">Image</a></li>
-              <li><a class="dropdown-item" href="advanced_search.html">Advanced Search</a></li>
+      <div class="container">
+        <img id="logo" src="logo.png">
+        <div class="menu">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="imagen.html">Image Search</a></li>
+                <li class="nav-item"><a href="advanced_search.html">Advanced Search</a></li>
             </ul>
-          </div>
-        <form action="https://www.google.com/search?tbm=isch">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+        </div>
+            
+        <form class="form" action="https://www.google.com/search">
+            <ul>
+                <li><input style="border-radius: 50px; height: 45px; width: 400px; padding-left: 5mm; padding-right: 5mm; border-color: lightgrey; border-inline-color: lightgray;" type="text" name="q"></li>
+                <li><input class="sborde" value="Google Search" aria-label="Google Search" name="btnK" type="submit">
+                    <input class="sborde" value="I'm Feelling Lucky" aria-label="I'm Feelling Lucky" name="btnI" type="submit">
+                </li>
+            </ul>
         </form>
+    </div>
     </body>
 </html>
